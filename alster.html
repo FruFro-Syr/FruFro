@@ -21,8 +21,21 @@
       flex-wrap: wrap;
     }
 
+    .logo-and-nav {
+      display: flex;
+      align-items: center;
+    }
+
     header img {
       height: 60px;
+      margin-right: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #735d78;
+      font-weight: bold;
     }
 
     .social-icons a {
@@ -30,19 +43,6 @@
       text-decoration: none;
       color: #735d78;
       font-size: 20px;
-    }
-
-    nav {
-      background-color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #735d78;
-      font-weight: bold;
     }
 
     .alster-container {
@@ -73,15 +73,42 @@
     .alster p {
       text-align: center;
     }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo-and-nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+    }
   </style>
 
-  <!-- För ikoner -->
+  <!-- Ikonbibliotek -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <header>
-    <img src="IMG_1808.jpeg" alt="Fru Frö logga">
+    <div class="logo-and-nav">
+      <img src="IMG_1808.jpeg" alt="Fru Frö logga">
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="alster.html">Mina Alster</a>
+      </nav>
+    </div>
     <div class="social-icons">
       <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank" title="Facebook">
         <i class="fab fa-facebook"></i>
@@ -94,11 +121,6 @@
       </a>
     </div>
   </header>
-
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="alster.html">Mina Alster</a>
-  </nav>
 
   <div class="alster-container">
     <div class="alster">
