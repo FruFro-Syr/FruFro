@@ -2,59 +2,114 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fru Frö syr unika produkter av återbrukade material. Alla intäkter går till Barncancerfonden.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fru Frö – Återbruk med hjärta och händer</title>
+
+  <!-- Font Awesome (kuvert-ikon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-LZw2SJd5whGQnljF0dKZpKj2nBTfUu8XKf9CIYGH5BY41DFqYmpUSg2JY9R5aHBXy6wUeNQvDKMMVK3D1r+K7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
-    body { font-family: Georgia, serif; background-color: #faf5f0; margin:0; padding:0; color:#333; }
-    header { background-color: #1a1a1a; color: #dbc3a3; padding: 1rem; text-align: center; }
-    header img { max-width: 140px; margin-bottom: 0.5rem; }
-    h1 { margin: 0; font-size: 1.8rem; color: #dbc3a3; }
-    nav { margin: 1rem 0; }
-    nav a { color: #dbc3a3; text-decoration: none; margin: 0 1rem; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .contacts a { margin: 0 0.5rem; display: inline-block; }
-    .contacts img { width: 24px; height: 24px; filter: invert(100%); vertical-align: middle; }
-    main.container { padding: 1.5rem; max-width: 800px; margin:auto; }
-    .highlight { background-color: #fff6e6; padding:1rem; border-left:5px solid #e69f4c; margin:1.5rem 0; }
-    footer { text-align:center; padding: 20px; background-color: #f2e9e4; margin-top: 50px; font-size:0.9rem; color: #666; }
+    body {
+      font-family: Georgia, serif;
+      background-color: #faf5f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #dbc3a3;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 140px;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #dbc3a3;
+    }
+
+    nav {
+      margin: 1rem 0;
+    }
+
+    nav a {
+      color: #dbc3a3;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      color: #dbc3a3;
+      margin: 0 0.5rem;
+      font-size: 1.3rem;
+      text-decoration: none;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .gallery-item {
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <img src="IMG_1808.jpeg" alt="Fru Frö logga">
     <h1>Fru Frö – Återbruk med hjärta och händer</h1>
+
     <nav>
       <a href="index.html">Start</a>
       <a href="alster.html">Mina Alster</a>
     </nav>
-    <div class="contacts">
-      <a href="https://www.instagram.com/frufro.syr?igsh=MWk5azFucndjYW9keQ%3D%3D&utm_source=qr" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+
+    <div class="social-icons">
+      <a href="mailto:frufro.syr@gmail.com" title="E-post">
+        <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      <a href="https://www.instagram.com/frufro.syr" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
       </a>
-      <a href="mailto:Frufro.syr@gmail.com">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mail-dot-com.svg" alt="Email">
+      <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
       </a>
     </div>
   </header>
 
-  <main class="container">
-    <p>Välkommen till Fru Frö – en plats där gamla tyger får nytt liv och varje söm bär en historia. Här syr jag unika, handgjorda produkter av återbrukade material: väskor, kläder, kuddfodral och små detaljer som scrunchies och accessoarer. Ofta skänkta till mig, eller fyndade på second hand. Det kan vara ett par slitna jeans, en gardinkappa från förr eller ett plagg som inte längre används – allt förvandlas med omsorg till något nytt, vackert och användbart.</p>
-    
-    <div class="highlight">💛 <strong>Alla intäkter går oavkortat till Barncancerfonden</strong> – för att kombinera kreativitet med omtanke.</div>
-    
-    <p>Följ gärna Fru Frö på Instagram och Facebook för att se nya alster, arbetet bakom kulisserna och små glimtar från syhörnan.</p>
+  <main>
+    <h2 style="text-align:center; margin-top: 2rem;">Mina Alster</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänning Vera" />
+        <p>Sommarklänningen ”VERA”</p>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>© Fru Frö Syr – 2025</p>
-    <p>Alla intäkter skänks till:</p>
-    <a href="https://www.barncancerfonden.se" target="_blank">
-      <img src="IMG_4175.png" alt="Barncancerfonden" style="height: 60px; margin-top: 10px;">
-    </a>
-  </footer>
 </body>
 </html>
