@@ -6,21 +6,34 @@
   <title>Mina Alster – Fru Frö</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       background-color: #fffaf5;
       color: #333;
     }
 
     header {
-      background-color: #735d78;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background-color: #f2e9e4;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    .social-icons a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #735d78;
+      font-size: 20px;
     }
 
     nav {
-      background-color: #f2e9e4;
+      background-color: #fff;
       padding: 10px;
       text-align: center;
     }
@@ -61,11 +74,25 @@
       text-align: center;
     }
   </style>
+
+  <!-- För ikoner -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <header>
-    <h1>Mina Alster</h1>
+    <img src="IMG_1808.jpeg" alt="Fru Frö logga">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/frufro.syr?igsh=MWk5azFucndjYW9keQ" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:frufro.syr@gmail.com" title="E-post">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
   </header>
 
   <nav>
@@ -74,22 +101,11 @@
   </nav>
 
   <div class="alster-container">
-
     <div class="alster">
       <h2>Sommarklänningen “VERA”</h2>
       <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänningen Vera – sydd av återbrukade barn-gardiner">
       <p>Sydd av återbrukade barn-gardiner. En luftig och lekfull sommarklänning med historia i varje söm.</p>
     </div>
-
-    <!-- Här kan du lägga till fler alster -->
-    <!--
-    <div class="alster">
-      <h2>Namn på nästa sak</h2>
-      <img src="bildfil.jpeg" alt="Beskrivning">
-      <p>Beskrivning av den här produkten...</p>
-    </div>
-    -->
-
   </div>
 
 </body>
