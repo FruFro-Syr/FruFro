@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fru Frö – Mina Alster</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <style>
     body {
       font-family: Georgia, serif;
@@ -14,131 +12,88 @@
       padding: 0;
       color: #333;
     }
-
     header {
       background-color: #1a1a1a;
       color: #dbc3a3;
       padding: 1rem;
       text-align: center;
     }
-
     header img {
       max-width: 140px;
       margin-bottom: 0.5rem;
     }
-
     h1 {
       margin: 0;
       font-size: 1.8rem;
       color: #dbc3a3;
     }
-
     nav {
       margin: 1rem 0;
     }
-
     nav a {
       color: #dbc3a3;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: bold;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
-    .contacts {
+    .social-icons {
       margin-top: 1rem;
     }
-
-    .contacts a {
+    .social-icons a {
       margin: 0 0.5rem;
-      display: inline-block;
+      color: #dbc3a3;
+      font-size: 1.2rem;
+      text-decoration: none;
     }
-
-    .contacts img {
-      width: 24px;
-      height: 24px;
-      filter: invert(100%);
-      vertical-align: middle;
-    }
-
-    .container {
-      padding: 1.5rem;
+    main {
+      padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
-
-    h2 {
-      text-align: center;
-      font-size: 1.6rem;
-      margin-bottom: 2rem;
-    }
-
-    /* GALLERI-STIL */
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 2.5rem;
-    }
-
     .gallery-item {
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 8px;
-      background-color: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 4rem;
     }
-
     .gallery-item h3 {
-      margin-top: 0;
-      font-size: 1.3rem;
-      color: #444;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
     }
-
-    .gallery-item img.main-image {
+    .main-image {
       width: 100%;
-      border-radius: 6px;
-      margin-top: 0.5rem;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin-bottom: 1rem;
     }
-
     .mini-gallery {
       display: flex;
-      gap: 0.5rem;
-      margin-top: 0.8rem;
+      gap: 10px;
+      margin-bottom: 1rem;
       flex-wrap: wrap;
     }
-
     .mini-gallery img {
-      width: 70px;
+      width: 100px;
       height: auto;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      transition: transform 0.3s ease;
       cursor: pointer;
+      border: 2px solid transparent;
+      transition: border 0.2s;
     }
-
-    .mini-gallery img:hover {
-      transform: scale(1.05);
+    .mini-gallery img.active {
+      border: 2px solid #e69f4c;
     }
-
-    .gallery-item p {
-      margin-top: 1rem;
-      color: #333;
-    }
-
     footer {
       text-align: center;
       color: #666;
       padding: 1rem;
       font-size: 0.9rem;
-      margin-top: 3rem;
+      background-color: #f2e9e4;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="IMG_1808.jpeg" alt="Fru Frö logga">
     <h1>Fru Frö – Återbruk med hjärta och händer</h1>
@@ -146,42 +101,49 @@
       <a href="index.html">Start</a>
       <a href="alster.html">Mina Alster</a>
     </nav>
-    <div class="contacts">
+    <div class="social-icons">
       <a href="mailto:frufro.syr@gmail.com" title="E-post">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mail-dot-ru.svg" alt="Email">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mail-dot-ru.svg" alt="Email" style="width: 24px; height: 24px; filter: invert(100%); vertical-align: middle;">
       </a>
       <a href="https://www.instagram.com/frufro.syr" target="_blank" title="Instagram">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width: 24px; height: 24px; filter: invert(100%); vertical-align: middle;">
       </a>
       <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank" title="Facebook">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width: 24px; height: 24px; filter: invert(100%); vertical-align: middle;">
       </a>
     </div>
   </header>
 
-  <main class="container">
+  <main>
     <h2>Mina Alster</h2>
 
-    <div class="gallery">
-      <div class="gallery-item">
-        <h3>Sommarklänningen ”VERA”</h3>
-        <img src="4369B782-CBCC-4D2A-808F-51A9F385542C.jpeg" alt="Klänning Vera huvudbild" class="main-image" />
-        <div class="mini-gallery">
-          <img src="5D3B2EF7-E774-4826-9605-EC4C144226F0.jpeg" alt="Klänning Vera bakifrån" />
-          <img src="EA69000D-91CC-42EF-808D-23098A3C4B11.jpeg" alt="Klänning Vera sida" />
-          <img src="F49E9A4A-E756-422E-8C66-96FEA6C36FAB.jpeg" alt="Klänning Vera detalj" />
-        </div>
-        <p>Luftig och somrig klänning sydd av återbrukade gardiner, med vackra detaljer och sköna färger. Helt unik och handgjord!</p>
+    <div class="gallery-item">
+      <h3>Sommarklänningen ”VERA”</h3>
+      <img id="main-vera" src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänning Vera huvudbild" class="main-image" />
+
+      <div class="mini-gallery">
+        <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Vera 1" onclick="changeMainImage('main-vera', this)" class="active">
+        <img src="4369B782-CBCC-4D2A-808F-51A9F385542C.jpeg" alt="Vera 2" onclick="changeMainImage('main-vera', this)">
+        <img src="5D3B2EF7-E774-4826-9605-EC4C144226F0.jpeg" alt="Vera 3" onclick="changeMainImage('main-vera', this)">
+        <img src="EA69000D-91CC-42EF-808D-23098A3C4B11.jpeg" alt="Vera 4" onclick="changeMainImage('main-vera', this)">
+        <img src="F49E9A4A-E756-422E-8C66-96FEA6C36FAB.jpeg" alt="Vera 5" onclick="changeMainImage('main-vera', this)">
       </div>
 
-      <!-- Här kan du lägga till fler alster senare -->
-
+      <p>Luftig och somrig klänning sydd av återbrukade gardiner, med vackra detaljer och sköna färger. Helt unik och handgjord!</p>
     </div>
   </main>
 
-  <footer>
-    © Fru Frö Syr – 2025
-  </footer>
+  <footer>© Fru Frö Syr – 2025</footer>
 
+  <script>
+    function changeMainImage(mainId, clickedImg) {
+      const mainImage = document.getElementById(mainId);
+      mainImage.src = clickedImg.src;
+
+      const allThumbs = clickedImg.parentElement.querySelectorAll('img');
+      allThumbs.forEach(img => img.classList.remove('active'));
+      clickedImg.classList.add('active');
+    }
+  </script>
 </body>
 </html>
