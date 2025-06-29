@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fru Frö – Återbruk med hjärta och händer</title>
 
-  <!-- Font Awesome (kuvert-ikon) -->
+  <!-- Font Awesome (för ikonerna) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-LZw2SJd5whGQnljF0dKZpKj2nBTfUu8XKf9CIYGH5BY41DFqYmpUSg2JY9R5aHBXy6wUeNQvDKMMVK3D1r+K7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
@@ -50,6 +50,10 @@
       text-decoration: underline;
     }
 
+    .social-icons {
+      margin-top: 0.5rem;
+    }
+
     .social-icons a {
       color: #dbc3a3;
       margin: 0 0.5rem;
@@ -57,24 +61,31 @@
       text-decoration: none;
     }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
+    .container {
+      padding: 1.5rem;
+      max-width: 800px;
+      margin: auto;
     }
 
-    .gallery-item {
+    .highlight {
+      background-color: #fff6e6;
+      padding: 1rem;
+      border-left: 5px solid #e69f4c;
+      margin: 1.5rem 0;
+    }
+
+    footer {
       text-align: center;
-      max-width: 300px;
+      color: #666;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
 
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
+    footer img {
+      height: 60px;
+      margin-top: 10px;
     }
+
   </style>
 </head>
 <body>
@@ -101,15 +112,25 @@
     </div>
   </header>
 
-  <main>
-    <h2 style="text-align:center; margin-top: 2rem;">Mina Alster</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänning Vera" />
-        <p>Sommarklänningen ”VERA”</p>
-      </div>
+  <div class="container">
+    <p>Välkommen till Fru Frö – en plats där gamla tyger får nytt liv och varje söm bär en historia. Här syr jag unika, handgjorda produkter av återbrukade material: väskor, kläder, kuddfodral och små detaljer som scrunchies och accessoarer. Ofta skänkta till mig, eller fyndade på second hand. Det kan vara ett par slitna jeans, en gardinkappa från förr eller ett plagg som inte längre används – allt förvandlas med omsorg till något nytt, vackert och användbart.</p>
+
+    <div class="highlight">
+      💛 <strong>Alla intäkter går oavkortat till Barncancerfonden</strong> – för att kombinera kreativitet med omtanke.
     </div>
-  </main>
+
+    <p>Följ gärna Fru Frö på Instagram och Facebook för att se nya alster, arbetet bakom kulisserna och små glimtar från syhörnan.</p>
+  </div>
+
+  <footer>
+    © Fru Frö Syr – 2025
+    <div>
+      <p>Alla intäkter skänks till:</p>
+      <a href="https://www.barncancerfonden.se" target="_blank">
+        <img src="IMG_4175.png" alt="Barncancerfonden">
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
