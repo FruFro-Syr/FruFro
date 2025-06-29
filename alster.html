@@ -2,133 +2,120 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mina Alster – Fru Frö</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      background-color: #fffaf5;
+      font-family: Georgia, serif;
+      background-color: #fef8f0;
       color: #333;
     }
 
     header {
-      background-color: #f2e9e4;
-      padding: 15px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .logo-and-nav {
-      display: flex;
-      align-items: center;
+      background-color: #1a1a1a;
+      color: #f4e9dc;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
     }
 
     header img {
-      height: 60px;
-      margin-right: 20px;
+      max-height: 100px;
+    }
+
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 1rem;
     }
 
     nav a {
-      margin: 0 10px;
+      color: #f4e9dc;
       text-decoration: none;
-      color: #735d78;
+      margin: 0 1rem;
       font-weight: bold;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+    }
+
     .social-icons a {
-      margin-left: 10px;
+      color: #f4e9dc;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
       text-decoration: none;
-      color: #735d78;
-      font-size: 20px;
     }
 
-    .alster-container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
+    main {
+      padding: 2rem;
     }
 
-    .alster {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
+    h2 {
+      text-align: center;
+      color: #3b2f2f;
     }
 
-    .alster img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 10px auto;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-item {
+      background: white;
+      padding: 1rem;
       border-radius: 8px;
-    }
-
-    .alster h2 {
-      color: #735d78;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    .alster p {
-      text-align: center;
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
 
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .logo-and-nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav a {
-        display: block;
-        margin: 5px 0;
-      }
-
-      .social-icons {
-        margin-top: 10px;
-      }
+    .gallery-item p {
+      margin-top: 0.5rem;
+      font-weight: bold;
     }
   </style>
-
-  <!-- Ikonbibliotek -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a2e0e6adcf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <header>
-    <div class="logo-and-nav">
-      <img src="IMG_1808.jpeg" alt="Fru Frö logga">
-      <nav>
-        <a href="index.html">Start</a>
-        <a href="alster.html">Mina Alster</a>
-      </nav>
-    </div>
+    <img src="IMG_1808.jpeg" alt="Fru Frö logga" />
+    <h1>Fru Frö – Återbruk med hjärta och händer</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="alster.html">Mina Alster</a>
+    </nav>
     <div class="social-icons">
-      <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank" title="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://www.instagram.com/frufro.syr?igsh=MWk5azFucndjYW9keQ" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="mailto:frufro.syr@gmail.com" title="E-post">
-        <i class="fas fa-envelope"></i>
-      </a>
+      <a href="mailto:frufro.syr@gmail.com" title="E-post"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/frufro.syr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
     </div>
   </header>
 
-  <div class="alster-container">
-    <div class="alster">
-      <h2>Sommarklänningen “VERA”</h2>
-      <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänningen Vera – sydd av återbrukade barn-gardiner">
-      <p>Sydd av återbrukade barn-gardiner. En luftig och lekfull sommarklänning med historia i varje söm.</p>
+  <main>
+    <h2>Mina Alster</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänning Vera" />
+        <p>Sommarklänningen ”VERA”</p>
+      </div>
+      <!-- Här kan du lägga till fler alster senare -->
     </div>
-  </div>
-
+  </main>
 </body>
 </html>
