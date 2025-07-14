@@ -80,7 +80,7 @@
 
     .gallery-item {
       text-align: center;
-      max-width: 250px;
+      max-width: 400px;
     }
 
     .gallery-item img {
@@ -91,6 +91,27 @@
     .gallery-item p {
       margin-top: 0.5rem;
       font-weight: bold;
+    }
+
+    .thumbnails {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .thumbnails img {
+      width: 50px;
+      height: auto;
+      border: 2px solid transparent;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: border 0.2s ease;
+    }
+
+    .thumbnails img:hover {
+      border: 2px solid #e69f4c;
     }
 
     footer {
@@ -130,10 +151,16 @@
     <h2>Mina Alster</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänning Vera" />
+        <img id="vera-main" src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Klänning Vera" />
         <p>Sommarklänningen ”VERA”</p>
+        <div class="thumbnails">
+          <img src="0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg" alt="Vera 1" onclick="changeImage('0ED29BA2-D55A-459F-B479-8D57C8FE0418.jpeg')" />
+          <img src="4369B782-CBCC-4D2A-808F-51A9F385542C.jpeg" alt="Vera 2" onclick="changeImage('4369B782-CBCC-4D2A-808F-51A9F385542C.jpeg')" />
+          <img src="5D3B2EF7-E774-4826-9605-EC4C144226F0.jpeg" alt="Vera 3" onclick="changeImage('5D3B2EF7-E774-4826-9605-EC4C144226F0.jpeg')" />
+          <img src="EA69000D-91CC-42EF-808D-23098A3C4B11.jpeg" alt="Vera 4" onclick="changeImage('EA69000D-91CC-42EF-808D-23098A3C4B11.jpeg')" />
+          <img src="F49E9A4A-E756-422E-8C66-96FEA6C36FAB.jpeg" alt="Vera 5" onclick="changeImage('F49E9A4A-E756-422E-8C66-96FEA6C36FAB.jpeg')" />
+        </div>
       </div>
-      <!-- Lägg till fler alster här -->
     </div>
   </main>
 
@@ -145,5 +172,10 @@
     </a>
   </footer>
 
+  <script>
+    function changeImage(src) {
+      document.getElementById('vera-main').src = src;
+    }
+  </script>
 </body>
 </html>
