@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Om mig – Fru Frö</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8J1LWG7LWV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8J1LWG7LWV');
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #faf5f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #dbc3a3;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 140px;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin: 1rem 0;
+    }
+
+    nav a {
+      color: #dbc3a3;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      color: #dbc3a3;
+      margin: 0 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .container {
+      padding: 1.5rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .profile-pic {
+      max-width: 200px;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .highlight {
+      background-color: #fff6e6;
+      padding: 1rem;
+      border-left: 5px solid #e69f4c;
+      margin: 2rem 0;
+      text-align: left;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #f2e9e4;
+      margin-top: 50px;
+    }
+
+    footer img {
+      height: 60px;
+      margin-top: 10px;
+    }
+
+    p {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="IMG_1808.jpeg" alt="Fru Frö logga">
+    <h1>Fru Frö – Återbruk med hjärta och händer</h1>
+
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="alster.html">Mina Alster</a>
+      <a href="om.html">Om mig</a>
+    </nav>
+
+    <div class="social-icons">
+      <a href="mailto:frufro.syr@gmail.com" title="E-post"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/frufro.syr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/14FijF5ZJ5J/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Om mig</h2>
+
+    <!-- Din bild -->
+    <img src="61410BF7-ADB0-41CD-8EBB-7C0DA20B2F20.jpeg" alt="Anna – Fru Frö" class="profile-pic">
+
+    <p>Jag heter Anna – och Fru Frö är mitt kreativa andningshål. Här får gamla tyger nytt liv, gamla idéer blir till nya projekt, och tankarna får vila medan symaskinen går.</p>
+
+    <p>Att sy är min frizon – ett sätt att skapa med hjärtat, tänka med händerna och ta tillvara på det som redan finns. Allt jag gör formas med omtanke, nyfikenhet och en kärlek till det unika i återbruket.</p>
+
+    <p>Allt jag syr är skapat av återbrukat material – tyger som fått nytt liv tack vare second hand-fynd, gåvor från vänner eller bekanta. Det enda jag egentligen står för är min tid, en trådrulle eller två – och kanske lite el.</p>
+
+    <div class="highlight">
+      💛 Men det viktigaste?<br>
+      Alla intäkter går oavkortat till <strong>Barncancerfonden</strong>.
+    </div>
+
+    <p>För mig är det här ett sätt att kombinera skaparglädje med omtanke – för både människa och miljö. Ett litet projekt med hjärtat på rätt plats.</p>
+  </main>
+
+  <footer>
+    <p>© Fru Frö Syr – 2025</p>
+    <p>Alla intäkter skänks till:</p>
+    <a href="https://www.barncancerfonden.se" target="_blank">
+      <img src="IMG_4175.png" alt="Barncancerfonden">
+    </a>
+  </footer>
+
+</body>
+</html>
